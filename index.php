@@ -31,7 +31,7 @@
         <form name="sendMessage">
             <div class="input">
                 <label for="name">Name</label>
-                <input type="text" name="name" value="<?php echo $_REQUEST['name']; ?>" placeholder="Your Name">
+                <input type="text" name="name" value="<?php echo ($_REQUEST['name'] ?? ''); ?>" placeholder="Your Name">
                 <label for="message">Message</label>
                 <input type="text" name="message" value="" placeholder="Message" autofocus>
             </div>
