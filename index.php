@@ -15,7 +15,7 @@
         $historyContent .= file_get_contents($historyFile);
     }
     if ($_REQUEST['message'] ?? '') {
-        $historyContent .= "<br />";
+        $historyContent .= $historyContent ? "<br />" : '';
         if (isset($_REQUEST['name'])) {
             $historyContent .= $_REQUEST['name'] . ' : ';
         }
